@@ -1,6 +1,6 @@
 function App() {
   return (
-    <h1>Hello World | I am focused now</h1>
+    <h1>Suraj is on webdev | React</h1>
   );
 }
 
