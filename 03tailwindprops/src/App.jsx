@@ -1,22 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Card from "./components/Card";
 
 function App() {
-
+  let myObj={
+    username:"suraj singh",
+    age:24
+  }
+  let newArr=[1,2,3,4,5]
   return (
     <>
-      <h1>03TailWindProps Project</h1>
-      <br />
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <br />
-    <h1 className='bg-green-400 text-red-500 p-4 rounded-xl' >Tailwind Test</h1><br /><br /><br /><br /><br />
-
+    <Card channel="Chai aur Code" btnText="Visit Me" />
+    <Card channel="Suraj Singh" btnText="Click Me"/>
+      <Card/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
