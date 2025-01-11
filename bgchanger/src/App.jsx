@@ -1,20 +1,39 @@
-import React from 'react'
-import './App.css'
-import Button from './components/Button'
+import { useState } from "react"
+
 function App() {
-  
+  const [color, setColor] = useState("olive")
   return (
-<>
-      <h1 className='bottom'>BackGround Changer</h1><br /><br />
-        <div className='bg-white rounded-2xl border-2 p-2'>
-      <Button color="Red"/>
-      <Button color="Blue"/>
-      <Button color="Black"/>
-      <Button color="Pink"/>
-      <Button color="Green"/>
-      <Button color="White"/>
+    <>
+<div className="w-full h-screen duration-200" 
+style={{backgroundColor: color}}
+>
+
+  <div className="fixed flex justify-center flex-wrap text-black inset-x-0 px-3 py-2 text-5xl font-bold">Background Changer website</div>
+  <div className="fixed flex justify-center flex-wrap  bottom-12 inset-x-0 px-2 text-2xl font-bold">
+    <div className="flex flex-wrap justify-center gap-3 shadow-xl bg-white px-3 py-2 rounded-3xl">
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-red-600"
+      onClick={() => setColor("red")}>Red</button>
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-blue-600"
+      onClick={() => setColor("blue")}>Blue</button>
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-black"
+      onClick={() => setColor("black")}>Black</button>
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-green-400"
+      onClick={() => setColor("Green")}>Green</button>
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-pink-600"
+      onClick={() => setColor("Pink")}>Pink</button>
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-gray-600"
+      onClick={() => setColor("gray")}>Gray</button>
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-purple-600"
+      onClick={() => setColor("purple")}>Purple</button>
+      <button className="outline-none px-4 py-1 rounded-full text-black shadow-lg bg-white"
+      onClick={() => setColor("white")}>White</button>
+      <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg bg-yellow-600"
+      onClick={() => setColor("yellow")}>yellow</button>
+
     </div>
-    </>
+  </div>
+  </div>
+  </>
   )
 }
 
