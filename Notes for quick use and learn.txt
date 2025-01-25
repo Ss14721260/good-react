@@ -1,0 +1,23 @@
+"""""""""""""""Tailwnd setup in Vite.""""""""""""""""""""""""
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+    content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+""""""""""""""""""""""""""""""""""""'""""""""""""""""""""""""""
+>>>>>>>>>>>>>>>>>Some usefull functions in javascript<<<<<<<<<<<<<<<<<<<<
+*input type=range
+(e) =>(e.target.value) for target an element value in dom
+
+*onChange={(e) => {setLength(e.target.value)}}
+
+*input type=chckbox
+onChange={(prev) => !prev}
+
+*math.random * anyIntegrer +1
+
+>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
